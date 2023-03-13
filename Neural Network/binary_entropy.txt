@@ -1,0 +1,11 @@
+Binary cross-entropy, also known as log loss, is a common cost function used in binary classification problems to measure the difference between predicted probabilities and actual target values.
+
+In binary classification, there are two classes: 0 and 1. The predicted probability of the positive class (class 1) is denoted by the variable "p", and the actual target value is denoted by the variable "y". Binary cross-entropy is defined as:
+
+-1 * (y * log(p) + (1-y) * log(1-p))
+
+The equation can be broken down as follows:
+
+If y=1, the first term -y*log(p) will contribute to the loss, and the second term -(1-y)*log(1-p) will be zero. This means that if the actual target value is 1, we penalize the model more if the predicted probability of class 1 is low.
+If y=0, the second term -(1-y)*log(1-p) will contribute to the loss, and the first term -y*log(p) will be zero. This means that if the actual target value is 0, we penalize the model more if the predicted probability of class 0 is low.
+Binary cross-entropy is commonly used as the cost function in logistic regression, and it is also used in deep learning models with binary outputs, such as binary classification tasks. The goal of training a model using binary cross-entropy is to minimize the loss, which indicates that the predicted probabilities are as close to the actual target values as possible.
