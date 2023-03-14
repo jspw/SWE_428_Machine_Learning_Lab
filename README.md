@@ -8,5 +8,5 @@
 
 ## Lab Finals
 
-- [For AI Lab](./Lab_Final/Problem-1/)
-- [For ML Lab](./Lab_Final/Problem-2/)
+- [For AI Lab](./Lab_Final/Problem-1/cnn.ipynb)
+- [For ML Lab](./Lab_Final/Problem-2/svm_model.ipynb)
